@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["manishankar"]
   spec.email         = ["manishankar2@gmail.com"]
   spec.summary       = %q{Simple way to Prioritize Active Record Ordering}
-  spec.description   = %q{Order Active Record by priority is made easy by simple key value pair input ,also maintaing existing order syntax}
+  spec.description   = %q{Order Active Record by priority is made easy by simple key value pair input ,also maintaining Order Method Chain}
   spec.homepage      = "https://github.com/manishankar2/order_priority"
   spec.license       = "MIT"
 

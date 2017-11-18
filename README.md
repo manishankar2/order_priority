@@ -1,6 +1,31 @@
 # Orderpriority
 
-TODO: Write a gem description
+A Simple way to Prioritize Active Record Ordering, by giving a simple key value pair input ,also maintaining Order Method Chain.
+
+# Usage
+
+```
+user = User.all
+
+user.priority_order(first_name: "Bruce Wayne", type: "super_hero")
+
+```
+The priority is followed in the order in which input is given.
+
+The gem also maintains existing order Method chaining.
+
+```
+user.priority_order({"first_name" => "Clark Kent"}).order("first_name")
+
+```
+
+The above snippet will give Results in the following Order
+
+- Clark Kent
+- Alan Scott
+- Bruce Wayne
+- Peter Parker
+- Tony Stark
 
 ## Installation
 
