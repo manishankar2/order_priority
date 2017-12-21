@@ -15,7 +15,9 @@ module Orderpriority
 						end
 						k="#{table.name}.#{table[k].name}"
 						ret << " WHEN #{k} = '#{v}' then #{index}"
-						ret << " WHEN #{k} like '%#{v}%' then #{index += 1}"
+						ret << " WHEN #{k} like '#{v}%' then #{index += 1}"
+						ret << " WHEN #{k} like '%#{v}' then #{index += 2}"
+						ret << " WHEN #{k} like '%#{v}%' then #{index += 3}"
 						index+=1
 					end
 				end
