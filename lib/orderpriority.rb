@@ -1,5 +1,6 @@
 require "orderpriority/version"
 
+
 module Orderpriority
 	ActiveRecord::QueryMethods.class_eval do
 		def priority_order(*args)
